@@ -9,16 +9,9 @@
 * {
   box-sizing: border-box;
 }
-*{
-    background-image: url('COLLEGE.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
-
 
 input[type=text], select, textarea {
-  width: 50%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 1px;
@@ -30,7 +23,7 @@ label {
   
 }
 input[type=date], select, textarea {
-  width: 50%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -73,6 +66,7 @@ input[type=submit]:hover {
   padding: 100px;
   float:center;
   font-style: normal;
+  width:100%;
   font-family: 'Times New Roman', Times, serif;
   
 }
@@ -80,12 +74,14 @@ input[type=submit]:hover {
 .col-25 {
   flex:1px;
   float: left;
+  width: 100%;
   margin-top:12px;
   display: table;
 }
 
 .col-75 {
   float: left;
+  width: 100%;
   margin-top: 12px;
   display: table;
 }
@@ -96,8 +92,8 @@ input[type=submit]:hover {
   clear:both;
 }
 table{
-  border:1px solid black;
-  width:50%;
+  border:12px solid black;
+  width:100%;
   float:center;
 
 }
@@ -108,7 +104,7 @@ table.center{
 }
 tr,th,td{
   width: 100%;
-  border: 1px solid rgb(17, 0, 0);
+  border: 12px solid rgb(17, 0, 0);
   background-color: rgb(250, 248, 248);
   padding: 12px;
   float: center;
@@ -118,7 +114,7 @@ tr,td.center{
   margin-left: auto;
 }
 [class*="col-"] {
-  width: 50%;
+  width: 100%;
 }
 
 div {
@@ -177,11 +173,18 @@ textarea {
 
 </div>
 </td>
-
+<style>
+	.content {
+    background-image: url('COLLEGE.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+	}
+</style>
 
 <div class="content">
   <form onsubmit="return display()">
-  <table>
+  <table style="text-align:center;">
   <tr>
    <div class="row">
     <div class="col-25">
