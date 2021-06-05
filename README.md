@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <index>
-    sedar medical college
-  </index>
-	<title>SEDAR MEDICAL COLLEGE</title>
+<head>	
 <style>
 * {
   box-sizing: border-box;
@@ -15,7 +11,7 @@ input[type=text], select, textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 1px;
-  resize: vertical;
+  resize:flex;
 }
 
 label {
@@ -93,7 +89,7 @@ input[type=submit]:hover {
 }
 table{
   border:1px solid black;
-  width:100%;
+  width:50%;
   float:center;
 
 }
@@ -103,7 +99,7 @@ table.center{
   float: center;
 }
 tr,th,td{
-  width: 100%;
+  width: 50%;
   border: 1px solid rgb(17, 0, 0);
   background-color: rgb(250, 248, 248);
   padding: 12px;
@@ -175,7 +171,7 @@ textarea {
 </div>
 </td>
 <style>
-	.div {
+	div {
     background-image: url('COLLEGE.jpg');
 	background-repeat: no-repeat;
     background-attachment: fixed;
