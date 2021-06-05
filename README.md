@@ -2,9 +2,6 @@
 <html>
 <head>	
 <style>
-* {
-  box-sizing: border-box;
-}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -23,7 +20,7 @@ input[type=date], select, textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 1px;
-  resize:flex;
+  resize: vertical;
 }
 label {
   padding: 12px 12px 12px 12px;
@@ -71,14 +68,12 @@ input[type=submit]:hover {
   flex:1px;
   float: left;
   width: 100%;
-  margin-top:12px;
   display: table;
 }
 
 .col-75 {
   float: left;
   width: 100%;
-  margin-top: 12px;
   display: table;
 }
 
