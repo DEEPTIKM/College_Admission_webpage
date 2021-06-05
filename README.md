@@ -80,14 +80,12 @@ input[type=submit]:hover {
 .col-25 {
   flex:1px;
   float: left;
-  width: 50%;
   margin-top:12px;
   display: table;
 }
 
 .col-75 {
   float: left;
-  width: 50%;
   margin-top: 12px;
   display: table;
 }
@@ -183,7 +181,7 @@ textarea {
 
 <div class="content">
   <form onsubmit="return display()">
-  <table style="text-align:center;">
+  <table>
   <tr>
    <div class="row">
     <div class="col-25">
