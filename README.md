@@ -1,15 +1,21 @@
-<!DOCTYPE html>
 <html>
 <head>	
 <style>
 
 input[type=text], select, textarea {
   width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
   resize:flex;
 }
 
 input[type=date], select, textarea {
   width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  resize: vertical;
 }
 
 input[type=submit] {
@@ -19,6 +25,7 @@ color: white;
 padding: 12px 210px; 
 text-align: center; 
 text-decoration: none; 
+display: inline-block; 
 margin: 2px 6px; 
 cursor: pointer; 
 font-size:20px;
@@ -34,6 +41,7 @@ input[type=submit]:hover {
 .header {
   color: #0f0101;
   text-align: center;
+  font-size: 25px;
 }
 
 .content {
@@ -51,18 +59,15 @@ input[type=submit]:hover {
   flex:1px;
   float: left;
   width: 100%;
-  display: table;
 }
 
 .col-75 {
   float: left;
   width: 100%;
-  display: table;
 }
 
-.row::after {
+.row:after {
   content: "";
-  display: table;
   clear:both;
 }
 table{
@@ -110,20 +115,19 @@ textarea {
 </head>
 <body>
 <style>
-   .content {
+	.content {
     background-image: url('COLLEGE.jpg');
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size:cover;
 	}
 </style>
 <div class="content">
-  <div class="header">
+    <div class="header">
         <h3>SEDAR MEDICAL COLLEGE ADMISSION</h3>
         <p>KNOWLEDGE ENLIGHTMENT</p>
-   </div>
-	
-  <form onsubmit="return display()">
+    </div>
+<form onsubmit="return display()"></form>
   <table>
   <tr>
    <div class="row">
