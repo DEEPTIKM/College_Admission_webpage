@@ -26,7 +26,7 @@ input[type=date], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 1px;
   resize: vertical;
 }
 label {
@@ -92,7 +92,7 @@ input[type=submit]:hover {
   clear:both;
 }
 table{
-  border:12px solid black;
+  border:1px solid black;
   width:100%;
   float:center;
 
@@ -104,7 +104,7 @@ table.center{
 }
 tr,th,td{
   width: 100%;
-  border: 12px solid rgb(17, 0, 0);
+  border: 1px solid rgb(17, 0, 0);
   background-color: rgb(250, 248, 248);
   padding: 12px;
   float: center;
@@ -112,6 +112,7 @@ tr,th,td{
 tr,td.center{
   margin-right: auto;
   margin-left: auto;
+  float:center;
 }
 [class*="col-"] {
   width: 100%;
@@ -174,7 +175,7 @@ textarea {
 </div>
 </td>
 <style>
-	.content {
+	.div {
     background-image: url('COLLEGE.jpg');
 	background-repeat: no-repeat;
     background-attachment: fixed;
