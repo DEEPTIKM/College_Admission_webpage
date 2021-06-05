@@ -119,11 +119,12 @@ textarea {
 	}
 </style>
 <div class="content">
-  <form onsubmit="return display()">
-    <div class="header">
+  <div class="header">
         <h3>SEDAR MEDICAL COLLEGE ADMISSION</h3>
         <p>KNOWLEDGE ENLIGHTMENT</p>
-    </div>
+   </div>
+	
+  <form onsubmit="return display()">
   <table>
   <tr>
    <div class="row">
