@@ -23,7 +23,7 @@ input[type=date], select, textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 1px;
-  resize: vertical;
+  resize:flex;
 }
 label {
   padding: 12px 12px 12px 12px;
