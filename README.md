@@ -11,20 +11,12 @@ input[type=text], select, textarea {
   resize:flex;
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  
-}
 input[type=date], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 1px;
   resize: vertical;
-}
-label {
-  padding: 12px 12px 12px 12px;
-  
 }
 
 input[type=submit] {
@@ -50,7 +42,7 @@ input[type=submit]:hover {
 .header {
   color: #0f0101;
   text-align: center;
-  box-shadow: 0 1px 3px rgba(216, 5, 5, 0.815), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(20, 1, 1, 0.815), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .content {
@@ -116,37 +108,6 @@ div {
 textarea {
   resize: none;
 }
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
 
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
@@ -157,14 +118,6 @@ textarea {
 </style>
 </head>
 <body>
-<td>
-<div class="header">
-  
-	<h2>SEDAR MEDICAL COLLEGE ADMISSION</h2>
-	<p>KNOWLEDGE ENLIGHTMENT</p>
-
-</div>
-</td>
 <style>
 	div {
     background-image: url('COLLEGE.jpg');
@@ -173,10 +126,13 @@ textarea {
     background-size: 100% 100%;
 	}
 </style>
-
 <div class="content">
   <form onsubmit="return display()">
-  <table style="text-align:center;">
+    <div class="header">
+        <h3>SEDAR MEDICAL COLLEGE ADMISSION</h3>
+        <p>KNOWLEDGE ENLIGHTMENT</p>
+    </div>
+  <table>
   <tr>
    <div class="row">
     <div class="col-25">
@@ -188,7 +144,7 @@ textarea {
    </div>
   </tr>
   </table>
-  <table style="text-align:center;">
+  <table>
   <tr>
    <div class="row">
     <div class="col-25">
@@ -200,7 +156,7 @@ textarea {
    </div>
   </tr>
   </table>
-  <table style="text-align:center;">
+  <table>
    <div class="row">
     <div class="col-25">
       <td><label for="ADMISSION ID">ADMISSION ID</label></td>
@@ -210,7 +166,7 @@ textarea {
     </div>
    </div>
   </table>
-  <table style="text-align:center;">
+  <table>
    <div class="row">
     <div class="col-25">
       <td><label for="DEPARTMENT">DEPARTMENT</label></td>
@@ -227,7 +183,7 @@ textarea {
     </div>
    </div>
   </table>
-  <table style="text-align:center;">
+  <table>
    <div class="row">
     <div class="col-25">
       <td><label for="DATE OF ADMISSION">DATE OF ADMISSION</label></td>
@@ -237,7 +193,7 @@ textarea {
 	  </div>
    </div>
   </table>
-  <table style="text-align:center;"> 
+  <table> 
    <div class="row">
 	  <div class="col-25">
 	    <td><label for="PREFER COLLEGE HOSTEL">PREFER COLLEGE HOSTEL</label></td>
@@ -253,7 +209,7 @@ textarea {
 	  </div>
    </div>
   </table>
-  <table style="text-align:center;">
+  <table>
    <div class="row">
 	  <div class="col-25">
 	    <td><label for="First Graduate">First Graduate</label></td>
