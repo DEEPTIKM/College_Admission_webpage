@@ -8,9 +8,14 @@
 <style>
 * {
   box-sizing: border-box;
-  
-  
 }
+*{
+    background-image: url('COLLEGE.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
 
 input[type=text], select, textarea {
   width: 100%;
@@ -65,7 +70,7 @@ input[type=submit]:hover {
 .content {
   border-radius: 0px;
   background-color: #f2f2f2;
-  padding: 50px;
+  padding: 100px;
   float:center;
   font-style: normal;
   font-family: 'Times New Roman', Times, serif;
@@ -75,14 +80,14 @@ input[type=submit]:hover {
 .col-25 {
   flex:1px;
   float: left;
-  width: 50%;
+  width: 100%;
   margin-top:12px;
   display: table;
 }
 
 .col-75 {
   float: left;
-  width: 50%;
+  width: 100%;
   margin-top: 12px;
   display: table;
 }
@@ -94,7 +99,7 @@ input[type=submit]:hover {
 }
 table{
   border:1px solid black;
-  width:50%;
+  width:100%;
   float:center;
 
 }
@@ -104,7 +109,7 @@ table.center{
   float: center;
 }
 tr,th,td{
-  width: 50%;
+  width: 100%;
   border: 1px solid rgb(17, 0, 0);
   background-color: rgb(250, 248, 248);
   padding: 12px;
@@ -174,14 +179,7 @@ textarea {
 
 </div>
 </td>
-<style>
-	div {
-	  background-image: url('COLLEGE.jpg');
-	  background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-	}
-</style>
+
 
 <div class="content">
   <form onsubmit="return display()">
