@@ -19,7 +19,6 @@ color: white;
 padding: 12px 210px; 
 text-align: center; 
 text-decoration: none; 
-display: inline-block; 
 margin: 2px 6px; 
 cursor: pointer; 
 font-size:20px;
@@ -111,9 +110,9 @@ textarea {
 </head>
 <body>
 <style>
-	div {
+   .content {
     background-image: url('COLLEGE.jpg');
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 	}
