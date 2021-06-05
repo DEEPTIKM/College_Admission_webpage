@@ -18,7 +18,7 @@
 
 
 input[type=text], select, textarea {
-  width: 100%;
+  width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 1px;
@@ -30,7 +30,7 @@ label {
   
 }
 input[type=date], select, textarea {
-  width: 100%;
+  width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -80,14 +80,14 @@ input[type=submit]:hover {
 .col-25 {
   flex:1px;
   float: left;
-  width: 100%;
+  width: 50%;
   margin-top:12px;
   display: table;
 }
 
 .col-75 {
   float: left;
-  width: 100%;
+  width: 50%;
   margin-top: 12px;
   display: table;
 }
@@ -99,7 +99,7 @@ input[type=submit]:hover {
 }
 table{
   border:1px solid black;
-  width:100%;
+  width:50%;
   float:center;
 
 }
@@ -120,7 +120,7 @@ tr,td.center{
   margin-left: auto;
 }
 [class*="col-"] {
-  width: 100%;
+  width: 50%;
 }
 
 div {
