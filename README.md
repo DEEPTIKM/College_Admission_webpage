@@ -5,18 +5,11 @@
 
 input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 1px;
   resize:flex;
 }
 
 input[type=date], select, textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 1px;
-  resize: vertical;
 }
 
 input[type=submit] {
@@ -42,7 +35,6 @@ input[type=submit]:hover {
 .header {
   color: #0f0101;
   text-align: center;
-  box-shadow: 0 1px 3px rgba(20, 1, 1, 0.815), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .content {
