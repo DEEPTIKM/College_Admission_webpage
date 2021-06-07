@@ -1,10 +1,9 @@
+
 <html>
 <head>
 <style>
 * {
   box-sizing: border-box;
-  
-  
 }
 
 input[type=text], select, textarea {
