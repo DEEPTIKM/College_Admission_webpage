@@ -22,14 +22,22 @@ label {
 }
 input[type=date], select, textarea {
   width: 100%;
-  padding: 12px;
+  padding: 2px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 2px;
   resize: vertical;
 }
 label {
-  padding: 12px 12px 12px 12px;
+  padding: 12px 12px 12px 0px;
   
+}
+div{
+  margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 input[type=submit] {
@@ -43,13 +51,11 @@ display: inline-block;
 margin: 2px 6px; 
 cursor: pointer; 
 font-size:20px;
--moz-box-align: center;
 }
 
 input[type=submit]:hover {
   background-color: #45a049;
-  display: flex;
-  align-content: center;
+ 
   
 }
 .header {
@@ -61,8 +67,7 @@ input[type=submit]:hover {
 .content {
   border-radius: 0px;
   background-color: #f2f2f2;
-  padding: 50px;
-  float:center;
+  padding: 100px;
   position: center;
   font-style: normal;
   font-family: 'Times New Roman', Times, serif;
@@ -70,17 +75,20 @@ input[type=submit]:hover {
 }
 
 .col-25 {
-  flex:1px;
   float: left;
   width: 50%;
-  margin-top:12px;
+  margin-top:2px;
   display: table;
+}
+
+select {
+  width: 100%;
 }
 
 .col-75 {
   float: left;
   width: 50%;
-  margin-top: 12px;
+  margin-top: px;
   display: table;
 }
 
@@ -89,36 +97,19 @@ input[type=submit]:hover {
   display: table;
   clear:both;
 }
-table{
-  border:1px solid black;
-  width:50%;
-  float:center;
-  position:center;
-}
-table.center{
-  margin-right: auto;
-  margin-left: auto;
-  float: center;
-}
-tr,th,td{
-  width: 50%;
-  border: 1px solid rgb(17, 0, 0);
-  background-color: rgb(250, 248, 248);
-  padding: 12px;
-  position: center;
-}
-tr,td.center{
-  margin-right: auto;
-  margin-left: auto;
-}
-[class*="col-"] {
-  width: 100%;
+table,td,tr,th
+{
+    border: solid 2px black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 1px;
+    border-radius: 6px;
+    color: #009900;
+    background-color: #F2F2F2;
+    padding: 5px;
 }
 
-div {
-  resize: horizontal;
-  overflow: auto;
-}
 textarea {
   resize: none;
 }
@@ -154,10 +145,10 @@ textarea {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 1px;
   }
 }
 </style>
@@ -179,97 +170,97 @@ textarea {
     </div>
   </td>
   <form onsubmit="return display()">
-  <table style="text-align:center;">
-  <tr>
+  <div id="form">
+  <table>
+   <tr>
+    <div class="row">
+     <div class="col-25">
+      <th><label for="Student Name">Student Name</label></th>
+     </div>
+    <div class="col-75">
+      <th><input type="text" id="name" name="Student Name" placeholder="enter Student Name.."></th>
+    </div>
+    </div>
+   </tr>
+   <tr>
+    <div class="row">
+     <div class="col-25">
+      <th><label for="Phone Number">Phone Number</label></th>
+     </div>
+     <div class="col-75">
+      <th><input type="text" id="Phone Number" name="Phone Number" placeholder="Enter Phone Number.."></th>
+     </div>
+    </div>
+   </tr>
+   <tr>
    <div class="row">
     <div class="col-25">
-      <td><label for="Student Name">Student Name</label></td>
+      <th><label for="ADMISSION ID">ADMISSION ID</label></th>
     </div>
     <div class="col-75">
-      <td><input type="text" id="name" name="Student Name" placeholder="enter Student Name.."></td>
+      <th><input type="text" id="ADMISSION ID" name="ADMISSION ID" placeholder="Enter ADMISSION ID.."></th>
     </div>
    </div>
-  </tr>
-  </table>
-  <table style="text-align:center;">
-  <tr>
+   </tr>
+   <tr>
    <div class="row">
     <div class="col-25">
-      <td><label for="Phone Number">Phone Number</label></td>
+      <th><label for="DEPARTMENT">DEPARTMENT</label></th>
     </div>
     <div class="col-75">
-      <td><input type="text" id="Phone Number" name="Phone Number" placeholder="Enter Phone Number.."></td>
-    </div>
-   </div>
-  </tr>
-  </table>
-  <table style="text-align:center;">
-   <div class="row">
-    <div class="col-25">
-      <td><label for="ADMISSION ID">ADMISSION ID</label></td>
-    </div>
-    <div class="col-75">
-      <td><input type="text" id="ADMISSION ID" name="ADMISSION ID" placeholder="Enter ADMISSION ID.."></td>
-    </div>
-   </div>
-  </table>
-  <table style="text-align:center;">
-   <div class="row">
-    <div class="col-25">
-      <td><label for="DEPARTMENT">DEPARTMENT</label></td>
-    </div>
-    <div class="col-75">
-      <td>
+      <th>
        <select type="text" id="DEPARTMENT" name="DEPARTMENT" placeholder="Your DEPARTMENT..">
         <option value="enter the department">enter the department</option>
 		    <option value="MBBS">MBBS</option>
         <option value="BDS">BDS</option>
         <option value="BHMS">BHMS</option>
        </select>
-      </td>
+      </th>
     </div>
    </div>
-  </table>
-  <table style="text-align:center;">
+   </tr>
+   <tr>
    <div class="row">
     <div class="col-25">
-      <td><label for="DATE OF ADMISSION">DATE OF ADMISSION</label></td>
+      <th><label for="DATE OF ADMISSION">DATE OF ADMISSION</label></th>
     </div>
     <div class="col-75">
-	    <td><input type="date" id="DATE OF ADMISSION" name="DATE OF ADMISSION" placeholder="mm/dd/yyyy"></td>
+	    <th><input type="date" id="DATE OF ADMISSION" name="DATE OF ADMISSION" placeholder="mm/dd/yyyy"></th>
 	  </div>
    </div>
-  </table>
-  <table style="text-align:center;"> 
+   </tr>
+   <tr>
    <div class="row">
 	  <div class="col-25">
-	    <td><label for="PREFER COLLEGE HOSTEL">PREFER COLLEGE HOSTEL</label></td>
+	    <th><label for="PREFER COLLEGE HOSTEL">PREFER COLLEGE HOSTEL</label></th>
 	  </div>
 	  <div class="col-75">
-     <td>
+     <th>
 	    <span id=hostel></span>
 	    <input type="radio" id="YES" name="Prefer College Hostel">
 	    <label for="YES">YES</label>
 	    <input type="radio" id="NO" name="Prefer College Hostel">
 	    <label for="NO">NO</label>
-     </td>
+     </th>
 	  </div>
    </div>
-  </table>
-  <table style="text-align:center;">
+   </tr>
+   <tr>
    <div class="row">
 	  <div class="col-25">
-	    <td><label for="First Graduate">First Graduate</label></td>
+	    <th><label for="First Graduate">First Graduate</label></th>
 	  </div>
 	  <div class="col-75">
-	    <td><input type="checkbox" id="firstGraduate" name="Check if you are first year graduate">
-	    <label for="Check if you are first year graduate">Check if you are first year graduate</label></td>
+	    <th><input type="checkbox" id="firstGraduate" name="Check if you are first year graduate">
+	    <label for="Check if you are first year graduate">Check if you are first year graduate</label></th>
 	  </div>
    </div>
+   </tr>
   </table>
   <div class="row">
     <input  type=submit id="Submit" value="confirm admission" class="header">
   </div>
+  </div> 
   </form>
 </div>
 <div id="result"></div>
