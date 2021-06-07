@@ -154,12 +154,12 @@ textarea {
 </head>
 <body>
 <style>
-	div {
-	  background-image: url('COLLEGE.jpg');
-	  background-repeat: no-repeat;
+div {
+    background-image: url('COLLEGE.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-	}
+}
 </style>
 <div class="content">
   <td>
