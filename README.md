@@ -6,19 +6,7 @@
   
   
 }
-body {
-    background-image: url('COLLEGE.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
-header {
-    background-image: url('COLLEGE.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
-	
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -42,7 +30,7 @@ label {
   padding: 12px 12px 12px 0px;
   
 }
-body{
+div{
   margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -50,7 +38,6 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-	
 
 input[type=submit] {
 background-color: Green;  
@@ -155,6 +142,8 @@ textarea {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
+
+
 @media screen and (max-width: 100px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -164,10 +153,19 @@ textarea {
 </style>
 </head>
 <body>
+<style>
+	div {
+	  background-image: url('COLLEGE.jpg');
+	  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+	}
+</style>
 <div class="content">
   <td>
     <div class="header">
       <h2>SEDAR MEDICAL COLLEGE ADMISSION</h2>
+      
     </div>
   </td>
   <form onsubmit="return display()">
