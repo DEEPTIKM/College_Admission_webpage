@@ -1,4 +1,3 @@
-b
 <html>
 <head>
 <style>
