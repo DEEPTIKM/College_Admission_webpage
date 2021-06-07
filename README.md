@@ -7,7 +7,7 @@
   
   
 }
-body {
+div {
     background-image: url('COLLEGE.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
