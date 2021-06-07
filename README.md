@@ -12,6 +12,12 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+header {
+    background-image: url('COLLEGE.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
 	
 input[type=text], select, textarea {
   width: 100%;
@@ -36,7 +42,7 @@ label {
   padding: 12px 12px 12px 0px;
   
 }
-div{
+body{
   margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -44,6 +50,7 @@ div{
     font-size: 20px;
     font-weight: bold;
 }
+	
 
 input[type=submit] {
 background-color: Green;  
