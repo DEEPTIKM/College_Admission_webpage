@@ -1,21 +1,35 @@
+<!DOCTYPE html>
 <html>
-<head>	
+<head>
 <style>
+* {
+  box-sizing: border-box;
+  
+  
+}
 
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 1px;
-  resize:flex;
+  resize: vertical;
 }
 
+label {
+  padding: 12px 12px 12px 0;
+  
+}
 input[type=date], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 1px;
+  border-radius: 4px;
   resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 12px;
+  
 }
 
 input[type=submit] {
@@ -41,16 +55,16 @@ input[type=submit]:hover {
 .header {
   color: #0f0101;
   text-align: center;
-  font-size: 25px;
+  
 }
 
 .content {
   border-radius: 0px;
   background-color: #f2f2f2;
-  padding: 100px;
+  padding: 50px;
   float:center;
+  position: center;
   font-style: normal;
-  width:100%;
   font-family: 'Times New Roman', Times, serif;
   
 }
@@ -58,23 +72,28 @@ input[type=submit]:hover {
 .col-25 {
   flex:1px;
   float: left;
-  width: 100%;
+  width: 50%;
+  margin-top:12px;
+  display: table;
 }
 
 .col-75 {
   float: left;
-  width: 100%;
+  width: 50%;
+  margin-top: 12px;
+  display: table;
 }
 
-.row:after {
+.row::after {
   content: "";
+  display: table;
   clear:both;
 }
 table{
   border:1px solid black;
   width:50%;
   float:center;
-
+  position:center;
 }
 table.center{
   margin-right: auto;
@@ -86,12 +105,11 @@ tr,th,td{
   border: 1px solid rgb(17, 0, 0);
   background-color: rgb(250, 248, 248);
   padding: 12px;
-  float: center;
+  position: center;
 }
 tr,td.center{
   margin-right: auto;
   margin-left: auto;
-  float:center;
 }
 [class*="col-"] {
   width: 100%;
@@ -104,6 +122,37 @@ div {
 textarea {
   resize: none;
 }
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
 
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
@@ -115,20 +164,22 @@ textarea {
 </head>
 <body>
 <style>
-	.content {
-    background-image: url('COLLEGE.jpg');
-	background-repeat: no-repeat;
+	div {
+	  background-image: url('COLLEGE.jpg');
+	  background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover;
+    background-size: 100% 100%;
 	}
 </style>
 <div class="content">
+  <td>
     <div class="header">
-        <h3>SEDAR MEDICAL COLLEGE ADMISSION</h3>
-        <p>KNOWLEDGE ENLIGHTMENT</p>
+      <h2>SEDAR MEDICAL COLLEGE ADMISSION</h2>
+      <p>KNOWLEDGE ENLIGHTMENT</p>
     </div>
-<form onsubmit="return display()"></form>
-  <table>
+  </td>
+  <form onsubmit="return display()">
+  <table style="text-align:center;">
   <tr>
    <div class="row">
     <div class="col-25">
@@ -140,7 +191,7 @@ textarea {
    </div>
   </tr>
   </table>
-  <table>
+  <table style="text-align:center;">
   <tr>
    <div class="row">
     <div class="col-25">
@@ -152,7 +203,7 @@ textarea {
    </div>
   </tr>
   </table>
-  <table>
+  <table style="text-align:center;">
    <div class="row">
     <div class="col-25">
       <td><label for="ADMISSION ID">ADMISSION ID</label></td>
@@ -162,7 +213,7 @@ textarea {
     </div>
    </div>
   </table>
-  <table>
+  <table style="text-align:center;">
    <div class="row">
     <div class="col-25">
       <td><label for="DEPARTMENT">DEPARTMENT</label></td>
@@ -179,7 +230,7 @@ textarea {
     </div>
    </div>
   </table>
-  <table>
+  <table style="text-align:center;">
    <div class="row">
     <div class="col-25">
       <td><label for="DATE OF ADMISSION">DATE OF ADMISSION</label></td>
@@ -189,7 +240,7 @@ textarea {
 	  </div>
    </div>
   </table>
-  <table> 
+  <table style="text-align:center;"> 
    <div class="row">
 	  <div class="col-25">
 	    <td><label for="PREFER COLLEGE HOSTEL">PREFER COLLEGE HOSTEL</label></td>
@@ -205,7 +256,7 @@ textarea {
 	  </div>
    </div>
   </table>
-  <table>
+  <table style="text-align:center;">
    <div class="row">
 	  <div class="col-25">
 	    <td><label for="First Graduate">First Graduate</label></td>
